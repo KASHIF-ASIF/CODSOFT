@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>M KASHIF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .textsize {
+            font-size: 100%;
+        }
+
+        @media screen and (max-width: 575px) {
+            .firstdiv,
+            .seconddiv {
+                max-width: 48%;
+            }
+
+            .textsize {
+                font-size: 3.5vw;
+            }
+        }
+
+        @media screen and (max-width: 330px) {
+            .textsize {
+                font-size: 2.8vw;
+            }
+        }
+
+        .bodycontainer {
+            background-color: darkgray;
+        }
+
+        .setheight {
+            height: 70vh;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .lname {
+            overflow: hidden;
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bheight {
+            height: auto;
+        }
+
+        .seconddiv {
+            max-height: 70vh;
+            overflow: hidden;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: black;
+            color: whitesmoke;
+            height: 8vh;
+            width: 100vw;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .skills-dropdown {
+            padding: 15px;
+        }
+
+        .skills-dropdown a {
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+
+        .skills-dropdown .dropdown-submenu {
+            position: relative;
+        }
+
+        .skills-dropdown .dropdown-submenu a::after {
+            content: "\f105";
+            float: right;
+            border: none;
+            margin-left: 5px;
+        }
+
+        .skills-dropdown .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark text-white bg-dark">
+        <a class="navbar-brand">IT SPECIALIST</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="KASHIF CV.pdf">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" target="_blank"
+                        onclick="location.href='mailto:mr.mkashifasif@gmail.com';">Contact Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="skillsDropdown" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Skills
+                    </a>
+                    <div class="dropdown-menu skills-dropdown" aria-labelledby="skillsDropdown">
+                        <a class="dropdown-item" href="#">Mobile App Development</a>
+                        <a class="dropdown-item" href="#">Website Development(PHP)</a>
+                        <a class="dropdown-item" href="#">DATABASE ADMINISTRATOR</a>
+                        <a class="dropdown-item" href="#">WordPress</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#projectModal1">Demostrate
+                            Food Lover Website</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container bodycontainer bheight">
+        <div class="row setheight">
+            <div class="col-sm col-xs col-md lname col-lg firstdiv" style="flex-wrap: nowrap;">
+                <p style="text-align:left; font-size: medium; visibility: hidden; animation-delay: 2s; " id="imtext"
+                    class=" w3-center w3-animate-zoom"><b>Hey, I'm</b></p>
+                <h1><b style="font-size: 5vw; visibility:hidden; animation-delay: 1s;color: red;" id="imname"
+                        class="w3-center w3-animate-zoom">MUHAMMAD KASHIF</b></h1>
+                <br>
+                <div class="card" id="imabout"
+                    style="visibility:hidden; overflow: hidden; max-height: fit-content;">
+                    <div class="card-body textsize">
+                        Web designer and developer from Karachi, Pakistan. I create custom websites to help businesses do
+                        better online. I help designers, small agencies, and businesses bring their ideas to life.
+                    </div>
+                </div>
+                <br>
+                <div style="background-color: white; visibility:hidden;" id="imcontact">
+                    <a href="https://wa.me/+923101333756" style="margin-left: 0vw;" target="_blank"
+                        class="fa fa-whatsapp text-dark"></a>
+                    <a href="https://www.linkedin.com/in/kashif-asif-898869223" target="_blank"
+                        style="margin-left: 3vw;" class="fa fa-linkedin text-dark"></a>
+                    <a target="_blank" onclick="location.href='mailto:mr.mkashifasif@gmail.com';"
+                        style="margin-left: 3vw;cursor: pointer;" class="fa fa-envelope text-dark"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100008758303190&mibextid=ZbWKwL" target="_blank"
+                        style="margin-left: 3vw;" class="fa fa-facebook text-dark"></a>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-sm col-xs col-md col-lg seconddiv position-relative" style="width: 100%; height: 100%;">
+                <img src="KASHIF_IMAGES.jpg" class="img-fluid center position-absolute top-0 end-0" alt="KASHIF IMAGE" style="width: 100%; height: 100%;">
+            </div>
+            
+            
+            
+        </div>
+    </div>
+
+    <!-- Project Modals -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModal1Label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal1Label">Food Ordering Website</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="http://food-lover-bukc.000webhostapp.com/FILES/LOGO.PNG" alt="Food Ordering Website" class="img-fluid">
+                    <p>Description: A food ordering website which has different user levels, User can order food and keep track of their delivery, Hotel can manage their operations and inventory through it.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="window.open('http://food-lover-bukc.000webhostapp.com/index.php', '_blank')">Demonstrate</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class=" text-center text-lg-start fixed-bottom">
+        <div class="footer-copyright text-center py-3">
+            © 2023 Copyright: MUHAMMAD KASHIF
+        </div>
+    </footer>
+
+    <script>
+        function showIt2() {
+            document.getElementById("imtext").style.visibility = "visible";
+        }
+        setTimeout("showIt2()", 2000);
+
+        function showIt1() {
+            document.getElementById("imname").style.visibility = "visible";
+        }
+        setTimeout("showIt1()", 4000);
+
+        function showIt3() {
+            document.getElementById("imabout").style.visibility = "visible";
+        }
+        setTimeout("showIt3()", 5000);
+
+        function showIt4() {
+            document.getElementById("imcontact").style.visibility = "visible";
+        }
+        setTimeout("showIt4()", 6000);
+    </script>
+
+</body>
+
+</html>
